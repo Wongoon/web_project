@@ -1,0 +1,41 @@
+.image_slide{
+    width:1400px;
+    height:600px;
+    position: relative;
+    overflow: hidden;
+}
+.image_slide > span{
+    display: block;
+    position:absolute;
+}
+.image_slide > span > img{
+    width:1400px;
+    height:600px;
+    object-fit: cover;
+}
+.contents{
+    width:1400px;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap column;
+}
+.contents_up{
+    display: flex;
+    justify-content: center;
+}
+.contents_up > table{
+    width:500px;
+    padding-left:100px;
+    padding-right: 100px;
+}
+table td{
+    font-size:15px;
+}
+table th{
+    font-size:18px;
+}
+.weapon_slot{
+    width:15px;
+    height:15px;
+    object-fit: cover;
+}
