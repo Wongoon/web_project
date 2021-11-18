@@ -42,8 +42,14 @@ h3.h3{
     margin-top:50px;
 }
 .contents table{
-    width:700px;
+    width:680px;
     position:relative;
+}
+.content_left{
+    margin-right: 10px;
+}
+.content_right{
+    margin-left:10px;
 }
 .contents_down{
     width:1400px;
@@ -70,7 +76,7 @@ h3.h3{
     object-fit: cover;
 }
 .week_reset{
-    width:700px;
+    width:680px;
     position: relative;
 }
 .week_reset > h3{
