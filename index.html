@@ -77,8 +77,9 @@
             </li>
         </ul>
     </header>
-<!-- index.html에 적용 -->
-    <div class="bodywrap"> <!-- image_slide & contents 묶기 -->
+    <!-- index.html에 적용 -->
+    <div class="bodywrap">
+        <!-- image_slide & contents 묶기 -->
         <div class="image_slide">
             <span>
                 <img class="img" src="images/slide/image_slide_01.jpg" alt="이미지 슬라이드 1">
@@ -92,74 +93,206 @@
             <span>
                 <img class="img" src="images/slide/image_slide_04.jpg" alt="이미지 슬라이드 4">
             </span>
+            <span>
+                <img class="img" src="images/slide/image_slide_05.jpg" alt="이미지 슬라이드 5">
+            </span>
+            <span>
+                <img class="img" src="images/slide/image_slide_06.jpg" alt="이미지 슬라이드 6">
+            </span>
+            <span>
+                <img class="img" src="images/slide/image_slide_07.jpg" alt="이미지 슬라이드 7">
+            </span>
         </div>
 
-        <div class="contents"> <!-- contents 상단 & 하단 묶기 -->
-            <div class="contents_up">
-                <table class="contents_left">
-                    <caption>
-                        <h3 class="h3">경이 무기 티어리스트</h3>
-                    </caption>
+        <div class="contents">
+            <!-- contents 상단 & 하단 묶기 -->
+
+            <h3 class="h3">경이 무기 티어리스트</h3>
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">PvE</label>
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">PvP</label>
+            <section id="content1">
+                <table>
                     <tr>
-                        <th>순위</th>
-                        <th>이미지</th>
-                        <th>무기 이름</th>
-                        <th>무기 슬롯</th>
-                        <th>획득처</th>
+                        <th>S</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/kinetic/izanagi's_burden.jpg" alt="이자나기의 짐">
+                            <img src="images/exotic_weapon/energy/divinity.jpg" alt="신성">
+                            <img src="images/exotic_weapon/power/the_lament.jpg" alt="한탄">
+                        </td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td class="weapon_img"><img src="images/exotic_weapon/kinetic/cerberus.jpg" alt="무기 이미지"></td>
-                        <td>케르베로스 + 1</td>
-                        <td><img src="images/weapon_slot/kinetic.jpg" alt="물리 무기" class="weapon_slot">물리 무기</td>
-                        <td>경이 엔그램에서 랜덤으로 획득</td>
+                        <th>A+</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/power/anarchy.jpg" alt="무정부">
+                            <img src="images/exotic_weapon/energy/cloudstrike.jpg" alt="구름강타">
+                            <img src="images/exotic_weapon/energy/eriana's_vow.jpg" alt="에리아나의 맹세">
+                        </td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td class="weapon_img"><img src="images/exotic_weapon/kinetic/cerberus.jpg" alt="무기 이미지"></td>
-                        <td>케르베로스 + 1</td>
-                        <td><img src="images/weapon_slot/kinetic.jpg" alt="물리 무기" class="weapon_slot">물리 무기</td>
-                        <td>경이 엔그램에서 랜덤으로 획득</td>
+                        <th>A</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/kinetic/hawkmoon.jpg" alt="매의 달">
+                            <img src="images/exotic_weapon/power/eyes_of_tomorrow.jpg" alt="내일의 눈">
+                            <img src="images/exotic_weapon/kinetic/witherhoard.jpg" alt="금고파쇄기">
+                            <img src="images/exotic_weapon/energy/telesto.jpg" alt="텔레스토">
+                            <img src="images/exotic_weapon/power/tractor_cannon.jpg" alt="트랙터 대포">
+                            <img src="images/exotic_weapon/kinetic/ager's_scepter.jpg" alt="애거의 홀">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>A-</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/power/heir_apparent.jpg" alt="후계자">
+                            <img src="images/exotic_weapon/energy/vex_mythoclast.jpg" alt="벡스 신화배격자">
+                            <img src="images/exotic_weapon/energy/riskrunner.jpg" alt="줄타기 곡예사">
+                            <img src="images/exotic_weapon/energy/ticuu's_divination.jpg" alt="티쿠우의 점">
+                            <img src="images/exotic_weapon/kinetic/monte_carlo.jpg" alt="몬테카를로">
+                            <img src="images/exotic_weapon/energy/the_fourth_horseman.jpg" alt="네번째 기수">
+                            <img src="images/exotic_weapon/power/xenophage.jpg" alt="제노파지">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>B+</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/kinetic/ace_of_spades.jpg" alt="스페이드 에이스">
+                            <img src="images/exotic_weapon/kinetic/bastion.jpg" alt="성채">
+                            <img src="images/exotic_weapon/power/black_talon.jpg" alt="검은 발톱">
+                            <img src="images/exotic_weapon/kinetic/cerberus.jpg" alt="케르베로스+1">
+                            <img src="images/exotic_weapon/kinetic/the_huckleberry.jpg" alt="허클베리">
+                            <img src="images/exotic_weapon/kinetic/thorn.jpg" alt="가시">
+                            <img src="images/exotic_weapon/kinetic/malfeasance.jpg" alt="불법 무기">
+                            <img src="images/exotic_weapon/energy/trinity_ghoul.jpg" alt="삼위일체 악귀">
+                            <img src="images/exotic_weapon/energy/sunshot.jpg" alt="태양탄">
+                            <img src="images/exotic_weapon/kinetic/no_time_to_explain.jpg" alt="설명할 시간 없어">
+                            <img src="images/exotic_weapon/power/whisper_of_the_worm.jpg" alt="벌레의 속삭임">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/kinetic/dead_man's_tale.jpg" alt="망자의 이야기">
+                            <img src="images/exotic_weapon/energy/hard_light.jpg" alt="굳센 빛">
+                            <img src="images/exotic_weapon/kinetic/traveler's_chosen.jpg" alt="여행자에게 선택받은 자">
+                            <img src="images/exotic_weapon/energy/tarrabah.jpg" alt="타라바">
+                            <img src="images/exotic_weapon/kinetic/lumina.jpg" alt="루미나">
+                            <img src="images/exotic_weapon/energy/coldheart.jpg" alt="차가운 심장">
+                            <img src="images/exotic_weapon/kinetic/outbreak_perfected.jpg" alt="완벽한 폭동">
+                            <img src="images/exotic_weapon/energy/lorentz_driver.jpg" alt="로렌츠 구동기">
+                            <img src="images/exotic_weapon/energy/prometheus_lens.jpg" alt="프로메테우스 렌즈">
+                            <img src="images/exotic_weapon/power/thunderlord.jpg" alt="천둥의 왕">
+                            <img src="images/exotic_weapon/power/one_thousand_voices.jpg" alt="천의 목소리">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>B-</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/kinetic/bad_juju.jpg" alt="불쾌한 주술">
+                            <img src="images/exotic_weapon/kinetic/crimson.jpg" alt="진홍핏 자국">
+                            <img src="images/exotic_weapon/energy/borealis.jpg" alt="보레알리스">
+                            <img src="images/exotic_weapon/power/DARCI.jpg" alt="D.A.R.C.I">
+                            <img src="images/exotic_weapon/energy/devils_ruin.jpg" alt="악마의 몰락">
+                            <img src="images/exotic_weapon/energy/duality.jpg" alt="이중성">
+                            <img src="images/exotic_weapon/energy/fighting_lion.jpg" alt="호전적인 사자">
+                            <img src="images/exotic_weapon/kinetic/wish_ender.jpg" alt="소원 종결자">
+                            <img src="images/exotic_weapon/kinetic/vigilance_wing.jpg" alt="감시의 날개">
+                            <img src="images/exotic_weapon/kinetic/the_last_word.jpg" alt="유언">
+                            <img src="images/exotic_weapon/kinetic/rat_king.jpg" alt="쥐의 왕">
+                            <img src="images/exotic_weapon/kinetic/suros_regime.jpg" alt="서로스 체제">
+                            <img src="images/exotic_weapon/energy/graviton_lance.jpg" alt="중력자의 창">
+                            <img src="images/exotic_weapon/kinetic/arbalest.jpg" alt="석궁">
+                            <img src="images/exotic_weapon/kinetic/cryosthesia_77k.jpg" alt="냉동마취 77K">
+                            <img src="images/exotic_weapon/energy/jotunn.jpg" alt="요툰">
+                            <img src="images/exotic_weapon/energy/merciless.jpg" alt="무자비">
+                            <img src="images/exotic_weapon/energy/ruinous_effigy.jpg" alt="폐허의 형상">
+                            <img src="images/exotic_weapon/power/legend_of_acrius.jpg" alt="아크리우스의 전설">
+                            <img src="images/exotic_weapon/power/the_wardcliff_coil.jpg" alt="워드클리프 코일">
+                            <img src="images/exotic_weapon/power/worldline_zero.jpg" alt="세계선 제로">
+                            <img src="images/exotic_weapon/power/sleeper_simulant.jpg" alt="슬리퍼 시뮬런트">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>C</th>
+                        <td class="tierlist_weapon_img">
+                            <img src="images/exotic_weapon/kinetic/the_jade_rabbit.jpg" alt="옥토끼">
+                            <img src="images/exotic_weapon/power/deathbringer.jpg" alt="죽음전달자">
+                            <img src="images/exotic_weapon/energy/skyburner's_oath.jpg" alt="하늘방화자의 맹세">
+                            <img src="images/exotic_weapon/kinetic/sturm.jpg" alt="질풍">
+                            <img src="images/exotic_weapon/energy/tommy's_matchbook.jpg" alt="토미의 성냥첩">
+                            <img src="images/exotic_weapon/kinetic/sweet_business.jpg" alt="멋진 모습">
+                            <img src="images/exotic_weapon/energy/le_monarque.jpg" alt="르 모나르크">
+                            <img src="images/exotic_weapon/energy/symmetry.jpg" alt="대칭">
+                            <img src="" alt="">
+                        </td>
                     </tr>
                 </table>
-                <table class="contents_right">
-                    <caption>
-                        <h3 class="h3">경이 방어구 티어리스트</h3>
-                    </caption>
+            </section>
+            <section id="content2">
+                <table>
                     <tr>
-                        <th>경이 방어구 티어리스트</th>
+                        <th>S</th>
+                    </tr>
+                    <tr>
+                        <th>A+</th>
+                    </tr>
+                    <tr>
+                        <th>A</th>
+                    </tr>
+                    <tr>
+                        <th>A-</th>
+                    </tr>
+                    <tr>
+                        <th>B+</th>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                    </tr>
+                    <tr>
+                        <th>B-</th>
+                    </tr>
+                    <tr>
+                        <th>C</th>
                     </tr>
                 </table>
+            </section>
+            <table>
+                <caption>
+                    <h3 class="h3">경이 방어구 티어리스트</h3>
+                </caption>
+                <tr>
+                    <th>경이 방어구 티어리스트</th>
+                    <td><a href="html/settings.html">가나다</a></td>
+                </tr>
+            </table>
+            <table>
+                <caption>
+                    <h3 class="h3">경이 방어구 티어리스트</h3>
+                </caption>
+                <tr>
+                    <th>순위</th>
+                    <th>이미지</th>
+                    <th>무기 이름</th>
+                    <th>무기 슬롯</th>
+                    <th>획득처</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="weapon_img"><img src="images/exotic_weapon/kinetic/cerberus.jpg" alt="무기 이미지"></td>
+                    <td>케르베로스 + 1</td>
+                    <td><img src="images/weapon_slot/kinetic.jpg" alt="물리 무기" class="weapon_slot">물리 무기</td>
+                    <td>경이 엔그램에서 랜덤으로 획득</td>
+                </tr>
+            </table>
+            <div class="week_reset contents_right">
+                <h3 class="h3">주간 리셋 + 암상인</h3>
+                <p>주간 리셋 + 암상인</p>
             </div>
-            <div class="contents_down">
-                <table class="contents_left">
-                    <caption>
-                        <h3 class="h3">경이 방어구 티어리스트</h3>
-                    </caption>
-                    <tr>
-                        <th>순위</th>
-                        <th>이미지</th>
-                        <th>무기 이름</th>
-                        <th>무기 슬롯</th>
-                        <th>획득처</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td class="weapon_img"><img src="images/exotic_weapon/kinetic/cerberus.jpg" alt="무기 이미지"></td>
-                        <td>케르베로스 + 1</td>
-                        <td><img src="images/weapon_slot/kinetic.jpg" alt="물리 무기" class="weapon_slot">물리 무기</td>
-                        <td>경이 엔그램에서 랜덤으로 획득</td>
-                    </tr>
-                </table>
-                <div class="week_reset contents_right">
-                    <h3 class="h3">주간 리셋 + 암상인</h3>
-                    <p>주간 리셋 + 암상인</p>
-                </div>
-            </div> <!-- div contents_down 종료 -->
         </div> <!-- div contents 종료 -->
     </div> <!-- div bodywrap 종료 -->
 
-<!-- 모든 웹 페이지 적용 -->
+    <!-- 모든 웹 페이지 적용 -->
     <footer>
 
     </footer>

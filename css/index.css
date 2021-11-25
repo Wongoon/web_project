@@ -1,3 +1,6 @@
+body{
+    box-sizing: border-box;
+}
 .image_slide{
     width:1400px;
     height:600px;
@@ -16,10 +19,14 @@
 .contents{
     width:1400px;
     height:auto;
+    display: flex;
+    flex-flow: wrap column;
 }
 table{
     border:none;
     border-collapse: collapse;
+    border-spacing: 0px;
+    padding: 0;
 }
 table td, table th{
     font-size:20px;
@@ -27,36 +34,63 @@ table td, table th{
     height:auto;
     width:auto;
     margin:0;
-    padding:10px;
+    padding:0;
     text-align:center;
+    border-collapse: collapse;
+    border-spacing: 0px;
 }
 h3.h3{
     margin-bottom: 10px;
     font-size:24px;
 }
-.contents_up{
-    width:1400px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top:50px;
-}
 .contents table{
-    width:680px;
+    max-width: 1400px;
+    width:1400px;
     position:relative;
 }
-.content_left{
-    margin-right: 10px;
+
+input, .contents section{
+    display:none;
 }
-.content_right{
-    margin-left:10px;
+label{
+    width:50%;
+    display: inline;
+    margin: 0 0 -1px;
+    padding: 15px 0px;
+    font-weight: 600;
+    text-align: center;
+    color:#aaa;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
 }
-.contents_down{
-    width:1400px;
-    position: relative;
-    display:flex;
-    justify-content: center;
-    margin-top:50px;
+label:hover{
+    color:#f68500;
+    cursor: pointer;
+}
+input:checked + label{
+    color:#f68500;
+    border:1px solid #bbb;
+    border-top: 2px solid #f68500;
+    border-bottom:1px solid #ffffff;
+}
+#tab1:checked + #content1,
+#tab2:checked + #content2{
+    display:block;
+}
+section table tr th{
+    width:75px;
+    height:75px;
+}
+.tierlist_weapon_img{
+    width:auto;
+    height:75px;
+    text-align: left !important;
+}
+.tierlist_weapon_img > img{
+    margin: 0;
+    width:75px;
+    vertical-align: middle;
+    padding: 3px 0;
 }
 .weapon_img{
     height: 80px;
@@ -76,7 +110,7 @@ h3.h3{
     object-fit: cover;
 }
 .week_reset{
-    width:680px;
+    width:1400px;
     position: relative;
 }
 .week_reset > h3{
