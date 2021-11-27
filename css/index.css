@@ -19,8 +19,6 @@ body{
 .contents{
     width:1400px;
     height:auto;
-    display: flex;
-    flex-flow: wrap column;
 }
 table{
     border:none;
@@ -40,42 +38,40 @@ table td, table th{
     border-spacing: 0px;
 }
 h3.h3{
-    margin-bottom: 10px;
+    margin-top:50px;
     font-size:24px;
+    text-align: center;
 }
 .contents table{
     max-width: 1400px;
     width:1400px;
     position:relative;
 }
-
-input, .contents section{
-    display:none;
+ul.tabmenu{
+    margin:0;
+    padding:0;
 }
-label{
-    width:50%;
-    display: inline;
-    margin: 0 0 -1px;
-    padding: 15px 0px;
-    font-weight: 600;
-    text-align: center;
+ul.tabmenu li{
+    display: inline-block;
+    background-color: #fff;
     color:#aaa;
-    border: 1px solid transparent;
+    padding: 10px 15px;
+    cursor:pointer;
+    border:1px solid transparent;
     transition: all 0.5s ease;
 }
-label:hover{
+ul.tabmenu li:hover{
     color:#f68500;
-    cursor: pointer;
 }
-input:checked + label{
-    color:#f68500;
-    border:1px solid #bbb;
+ul.tabmenu li.current{
     border-top: 2px solid #f68500;
-    border-bottom:1px solid #ffffff;
+    color:#f68500;
 }
-#tab1:checked + #content1,
-#tab2:checked + #content2{
-    display:block;
+.tab-content{
+    display: none;
+}
+.tab-content.current{
+    display: inherit;
 }
 section table tr th{
     width:75px;
