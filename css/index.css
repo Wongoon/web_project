@@ -55,7 +55,7 @@ ul.tabmenu li{
     display: inline-block;
     background-color: #fff;
     color:#aaa;
-    padding: 10px 15px;
+    padding: 20px 40px;
     cursor:pointer;
     border:1px solid transparent;
     transition: all 0.5s ease;
