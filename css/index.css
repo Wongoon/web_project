@@ -63,7 +63,7 @@ ul.tabmenu li{
 ul.tabmenu li:hover{
     color:#f68500;
 }
-ul.tabmenu li.current{
+ul.tabnav_ul li.current{
     border-top: 2px solid #f68500;
     color:#f68500;
 }
@@ -73,37 +73,40 @@ ul.tabmenu li.current{
 .tab-content.current{
     display: inherit;
 }
+.exotic_armor_div{
+    display: flex;
+    justify-content: center;
+}
+.exotic_armor{
+    width:calc((1400px / 3) - 5);
+    float:left;
+    margin-right:5px;
+    position: relative;
+    display:block;
+}
+.exotic_armor > table{
+    width:100%;
+}
+.exotic_armor table tr td{
+    width:calc(100% - 62px);
+}
+.exotic_armor table tr th{
+    width:62px;
+}
 section table tr th{
     width:75px;
     height:75px;
 }
-.tierlist_weapon_img{
+.tierlist_weapon_img, .tierlist_armor_img{
     width:auto;
     height:75px;
     text-align: left !important;
 }
-.tierlist_weapon_img > img{
+.tierlist_weapon_img > img, .tierlist_armor_img > img{
     margin: 0;
     width:75px;
     vertical-align: middle;
     padding: 3px 0;
-}
-.weapon_img{
-    height: 80px;
-    width: 80px;
-    padding:0;
-    margin:0;
-}
-.weapon_img > img{
-    margin:0;
-    width:80px;
-    height:100%;
-    display:block;
-}
-.weapon_slot{
-    width:15px;
-    height:15px;
-    object-fit: cover;
 }
 .week_reset{
     width:1400px;
