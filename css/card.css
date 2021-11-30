@@ -1,0 +1,68 @@
+.card{
+    position: relative;
+    left:100px;
+    width:300px;
+    height:400px;
+    background-color: #f8f8f8;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin:30px 0;
+}
+.card i{
+    position: absolute;
+    top:40px;
+    left:-15px;
+    width:280px;
+    height: 50px;
+    background-color: #f68500;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+}
+.card i::before{
+    content: '';
+    position: absolute;
+    top:50px;
+    width:15px;
+    height:30px;
+    background-color: #e0680c;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+.card i::after{
+    content: '';
+    position: absolute;
+    top:50px;
+    width:15px;
+    height:15px;
+    background-color: #f68500;
+    z-index: 1;
+}
+.card .to_id{
+    position: relative;
+    top:90px;
+    padding: 10px;
+}
+.card .to_id p{
+    font-size:18px;
+}
+.card .to_id p a{
+    color:#0275d8;
+}
+.card .to_id p a:hover{
+    text-decoration: underline;
+}
+.card .title{
+    position: relative;
+    top:40px;
+    left:-15px;
+    width:280px;
+    height:50px;
+    line-height: 50px;
+}
+.card .title p{
+    font-size:20px;
+    font-weight:700;
+    text-align: center;
+    color:#2b2b37;
+}

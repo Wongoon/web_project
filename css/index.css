@@ -1,21 +1,6 @@
 body{
     box-sizing: border-box;
 }
-.image_slide{
-    width:1400px;
-    height:600px;
-    position: relative;
-    overflow: hidden;
-}
-.image_slide > span{
-    display: block;
-    position:absolute;
-}
-.image_slide > span > img{
-    width:1400px;
-    height:600px;
-    object-fit: cover;
-}
 .contents{
     width:1400px;
     height:auto;
@@ -110,9 +95,17 @@ section table tr th{
 }
 .week_reset{
     width:1400px;
+    height:auto;
     position: relative;
+    margin:0 auto;
+    border: 1px solid #2b2b37;
+    margin-bottom: 10px;
 }
-.week_reset > h3{
-    display:block;
-    text-align:center;
+.week_reset p{
+    display: block;
+    text-align: center;
+    height:100%;
+    padding: 100px 0;
+    font-size: 20px;
+    font-weight: 700;
 }

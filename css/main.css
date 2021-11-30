@@ -49,40 +49,71 @@ header{
 .nav-in > li > a:hover, .nav-in > li:hover > a{
     color:#f68500 !important;
 }
+.image_slide{
+    width:1400px;
+    height:600px;
+    position: relative;
+    overflow: hidden;
+}
+.image_slide > span{
+    display: block;
+    position:absolute;
+}
+.image_slide > span > img{
+    width:1400px;
+    height:600px;
+    object-fit: cover;
+}
 footer{
     width:1400px;
     display: flex;
-    justify-content: center;
+    flex-flow: wrap column;
     background-color: #2b2b37;
-    margin-bottom: 10px;
+    padding-bottom: 30px;
 }
 footer .go_to{
-    width:25%;
-    float:left;
-    position: relative;
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
 footer .go_to a{
     display: block;
     text-align: center;
+    width: calc(1400px / 4);
     height:auto;
-    margin: 50px 0;
+    padding: 30px 0;
     color:#fff;
     transition: all 0.5s ease;
-}
-footer .go_to a img{
-    display: inline-block;
-    width:30px;
-    height:30px;
+    font-size:14px;
 }
 footer a:hover{
     color:#f68500;
 }
-footer .copyright{
-    width:50%;
+.bt_submenu{
+    border-top:1px solid #fff;
+    width:100%;
+    padding-top: 30px;
+}
+.bt_nav{
     display: flex;
-    align-items: center;
-    margin: 0;
+    justify-content: center;
+}
+.bt_nav li{
+    width:150px;
+}
+.bt_nav li a, .bt_nav-in li a{
+    color:#fff;
+    display: block;
+    width:100%;
+    height:32px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.bt_nav li a:hover, .bt_nav-in li a:hover{
+    color:#f68500;
+}
+footer .copyright{
+    margin: 20px 0;
 }
 footer .copyright h5{
     color:#f68500;

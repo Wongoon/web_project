@@ -1,5 +1,14 @@
 .contents{
   width:1400px;
-  height:1000px;
+  height:auto;
   margin:0 auto;
+  position: relative;
+}
+.contents p{
+  display: block;
+  text-align: center;
+  height:100%;
+  padding: 100px 0;
+  font-size: 20px;
+  font-weight: 700;
 }
