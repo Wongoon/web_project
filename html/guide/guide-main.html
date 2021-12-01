@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <title>운명의 가이드</title>
@@ -9,7 +10,34 @@
     <link rel="stylesheet" href="../../css/card.css">
     <script src="../../javascript/main.js" defer type="text/javascript"></script>
     <script src="../../javascript/jquery-1.12.3.js"></script>
+    <style>
+        .strong_and_best dt {
+            font-weight: bold;
+        }
+        .strong_and_best dd ul {
+            display: block;
+            position: relative;
+            list-style: inside disc;
+            left: 15px;
+        }
+        .strong_and_best dd ul li {
+            padding: 10px auto;
+        }
+        .second {
+            padding-top: 10px;
+        }
+        span.rare {
+            color: steelblue;
+        }
+        span.legendary {
+            color: purple;
+        }
+        span.exotic {
+            color: darkgoldenrod;
+        }
+    </style>
 </head>
+
 <body>
     <!-- 모든 웹 페이지 적용 -->
     <header>
@@ -18,9 +46,9 @@
             <li><a href="../../html/guide/guide-main.html">가이드</a>
                 <ul class="nav-in">
                     <li><a href="../../html/guide/guide-main.html">전체 가이드</a></li>
-                    <li><a href="../../html/guide/guide-first.html">1100 ~ 1270</a></li>
-                    <li><a href="../../html/guide/guide-second.html">1270 ~ 1320</a></li>
-                    <li><a href="../../html/guide/guide-third.html">1320 ~ 1330</a></li>
+                    <li><a href="../../html/guide/guide-main.html#c-3">1100 ~ 1270</a></li>
+                    <li><a href="../../html/guide/guide-main.html#c-4">1270 ~ 1320</a></li>
+                    <li><a href="../../html/guide/guide-main.html#c-5">1320 ~ 1330</a></li>
                 </ul>
             </li>
             <li><a href="../../html/class/class-main.html">클래스</a>
@@ -75,7 +103,7 @@
             </li>
         </ul>
     </header>
-    
+
     <div class="image_slide">
         <span>
             <img class="img" src="../../images/slide/image_slide_01.jpg" alt="이미지 슬라이드 1">
@@ -109,20 +137,169 @@
                 </div>
                 <div class="to_id">
                     <p><a href="#c-1">1</a>. 전투력 시스템</p>
+                    <p><a href="#c-2">2</a>. 강력한 장비 / 최고급 장비</p>
+                    <p><a href="#c-3">3</a>. 1100 ~ 1270</p>
+                    <p><a href="#c-4">4</a>. 1270 ~ 1320</p>
+                    <p><a href="#c-5">5</a>. 1320 ~ 1330</p>
                 </div>
             </div>
         </div>
         <div id="c-1" class="contents">
             <h2><a href="#top">1.</a> 전투력 시스템</h2>
             <div class="system">
-                데스티니 가디언즈의 모든 무기, 방어구 아이템에 전투력 수치가 적혀 있는데, 이것은 타 게임의 아이템 레벨이라고 보면 된다. 물론 그 숫자가 높다고 해서 그 무기가 무조건적으로 좋은 것만은 아니다. 순전히 화력이나 연사력만으로 수치가 결정되지 않으므로 무조건 전투력 수치만 보지 말고 자신에게, 혹은 자신의 캐릭터에게 맞는 종류와 특성을 고려해야 한다.
+                데스티니 가디언즈의 모든 무기, 방어구 아이템에 전투력 수치가 적혀 있는데, 이것은 타 게임의 아이템 레벨이라고 보면 된다. 물론 그 숫자가 높다고 해서 그 무기가 무조건적으로 좋은
+                것만은 아니다. 순전히 화력이나 연사력만으로 수치가 결정되지 않으므로 무조건 전투력 수치만 보지 말고 자신에게, 혹은 자신의 캐릭터에게 맞는 종류와 특성을 고려해야 한다.
                 <br><br>
-                
+
                 전투력 수치는 다음 기준에 따라 보너스나 페널티를 주는 개념이다. 이외에 장비의 성능<span>(무기의 특성이나 방어구의 능력치 보너스)</span>은 따로 봐야 한다.
                 <br>
-                PvE : 적 전투력보다 낮으면 각종 페널티를 받으며, 높으면 +50까지 보너스를 받을 수 있다. 보통 추천 전투력만 맞출 수 있다면 괜찮기 때문에, 전투력이 낮은 초보 유저들도 다른 유저와 함께 일반 컨텐츠<span>(공개 이벤트, 공격전, 잊혀진 구역 등)</span>에 참가할 수 있다.
+                PvE : 적 전투력보다 낮으면 각종 페널티를 받으며, 높으면 +50까지 보너스를 받을 수 있다. 보통 추천 전투력만 맞출 수 있다면 괜찮기 때문에, 전투력이 낮은 초보 유저들도 다른
+                유저와 함께 일반 컨텐츠<span>(공개 이벤트, 공격전, 잊혀진 구역 등)</span>에 참가할 수 있다.
                 <br>
-                PvP : 레벨 혜택이 비활성화 된 곳에선 상관 없고, 레벨 혜택이 활성화된 곳<span>(갬빗 침입자 PvP, 강철 깃발, 오시리스의 시험)</span>에선 높은 쪽이 유리하나 큰 차이는 아니다.
+                PvP : 레벨 혜택이 비활성화 된 곳에선 상관 없고, 레벨 혜택이 활성화된 곳<span>(갬빗 침입자 PvP, 강철 깃발, 오시리스의 시험)</span>에선 높은 쪽이 유리하나 큰
+                차이는 아니다.
+                <br><br>
+                <dl>
+                    <dt>플레이어의 표기 전투력</dt>
+                    <dd>- 캐릭터의 스킬 대미지<span>(수류탄, 근접 능력, 궁극기)</span>나 피격 대미지에 영향을 준다.</dd>
+
+                    <dt>무기 전투력</dt>
+                    <dd>- 해당 무기의 대미지에 영향을 준다.</dd>
+
+                    <dt>플레이어의 최대 전투력<span>(경이템 제한을 무시하고 금고에 포함된 모든 템을 포함해 가장 전투력이 높은 아이템을 기준으로 계산)</span></dt>
+                    <dd>- <a href="#c-2" class="inlink">강력한</a>/<a href="#c-3" class="inlink">최고급</a> 장비 보상 시의 기준이 되는
+                        전투력이다. <span>(<a href="https://app.destinyitemmanager.com/" class="outlink"
+                                target="_blank">Destiny Item Mannager</a> 에서 쉽게 확인할 수 있다.)</span></dd>
+                </dl>
+            </div>
+        </div>
+        <div id="c-2" class="contents">
+            <h2><a href="#top">2.</a> 강력한 장비 / 최고급 장비</h2>
+            <div class="system">
+                강력한 장비 / 최고급 장비는 인벤토리와 창고를 포함해 캐릭터가 낄 수 있는 최대한 전투력이 높은 장비들로만으로 구성했을 때의 평균 전투력을 기준으로 + α 만큼의 전투력을 지닌 장비.
+                이 계산에서는 경이 장비는 하나만 낄 수 있다는 제한을 적용하지 않는다.
+                <br><br>
+                <dl class="strong_and_best">
+                    <dt>강력한 장비</dt>
+                    <br>
+                    <dd>
+                        <ul>
+                            <li>황혼전 시련 경이 엔그램 <span>(+0)</span></li>
+                            <li>황혼전 시련 무기 <span>(+0)</span></li>
+                            <li>클랜 황혼전 보상 <span>(+1)</span></li>
+                            <li>클랜 레이드 보상 <span>(+1)</span></li>
+                            <li>클랜 시련의 장 보상 <span>(+1)</span></li>
+                            <li>클랜 갬빗 보상 <span>(+1)</span></li>
+                        </ul>
+                    </dd>
+                    <hr>
+                    <dt class="second">강력한 장비 <span>(1단계)</span></dt>
+                    <br>
+                    <dd>
+                        <ul>
+                            <li>태초 엔그램 & 경이 엔그램</li>
+                            <li>여분의 부품 <span>(총제작자 현상금)</span></li>
+                            <li>선봉대 복무 <span>(선봉대 현상금)</span></li>
+                            <li>실탄 훈련 <span>(시련의 장 현상금)</span></li>
+                            <li>수상쩍은 음모 <span>(갬빗 현상금)</span></li>
+                            <li>유로파 도전 <span>(바릭스 현상금)</span></li>
+                            <li>황혼전 : 시련 주간 퀘스트 완료 <span>(전투력 1200 ~ 1340+)</span></li>
+                            <li>시련의 장 영광 도전 <span>(전투력 1100+)</span></li>
+                            <li>시련의 장 용맹 랭크 상승</li>
+                            <li>시련의 장 영광 랭크 상승</li>
+                            <li>갬빗 악명 랭크 상승</li>
+                            <li>엑소 스트레인저 도전</li>
+                            <li>주간 엑소 도전 <span>(전투력 1230+)</span></li>
+                            <li>제국 사냥 도전 <span>(전투력 1200+)</span></li>
+                            <li>길잡이의 나침반 현상금</li>
+                            <li>천체 정렬 <span>(1/3) (전투력 1150+)</span></li>
+                        </ul>
+                    </dd>
+                    <hr>
+                    <dt class="second">강력한 장비 <span>(2단계)</span></dt>
+                    <br>
+                    <dd>
+                        <ul>
+                            <li>전투 숙련</li>
+                            <li>천체 정렬 <span>(2/3) (전투력 1150+)</span></li>
+                        </ul>
+                    </dd>
+                    <hr>
+                    <dt class="second">강력한 장비 <span>(3단계)</span></dt>
+                    <br>
+                    <dd>
+                        <ul>
+                            <li>치명적인 사냥 <span>(전투력 1150+)</span></li>
+                            <li>딥스톤 무덤 레이드 <span>(전투력 1250+) (주당 최대 5개 가능)</span></li>
+                            <li>네트 파괴자 <span>(전투력 1300+)</span></li>
+                            <li>천체 정렬 <span>(3/3) (전투력 1150+)</span></li>
+                        </ul>
+                    </dd>
+                    <hr>
+                    <dt class="second">최고급 장비</dt>
+                    <br>
+                    <dd>
+                        <ul>
+                            <li>주간 선봉대 공격전 <span>(전투력 1100+)</span></li>
+                            <li>시련의 장 플레이리스트 도전 </li>
+                            <li>주간 갬빗 도전</li>
+                            <li>클랜 보상</li>
+                            위의 4가지 최고급 장비는 1310 이상 전투력에서 +1의 최고급 장비를 획득할 수 있다.
+                            <hr>
+                            <li>황혼전 : 시련 주간 점수 <span>(전투력 1310+)</span></li>
+                            <li>오시리스의 시험 도전</li>
+                            <li>오시리스의 시험 <span>(주간)</span></li>
+                            <li>시험 무결점 보상 <span>(오시리스의 시험 - 하나의 티켓으로 무패 7연승 하기)<br>(신뢰의 통행권으로 무결점 달성 시 최고급 장비 하나 더 획득
+                                    가능)</span></li>
+                            <li>강철 깃발 퀘스트</li>
+                            <li>예언 던전</li>
+                            <li>유리 금고 레이드</li>
+                            <li>마스터 난이도 제국 사냥 <span>(전투력 1340+)</span></li>
+                            <li>주간 엑소 도전 <span>(전투력 1230+) (파괴 공작 3단계 필수)</span></li>
+                            <li>주간 선각자 도전 <span>(전투력 1270+)</span></li>
+                            <li>주간 예지 퀘스트 도전 <span>(전투력 1250+)</span></li>
+                            <li>조각난 용사 <span>(전투력 1250+)</span></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="contents" id="c-3">
+            <h2><a href="#top">3.</a> 1100 ~ 1270</h2>
+            <div class="system">
+                모든 <span class="rare">희귀</span> / <span class="legendary">전설</span> / <span class="exotic">경이</span> 보상이
+                최대 전투력 + α <span>(α > 0)</span> 로 나온다.
+                <br>
+                또한, &lt;태초의 예시&gt; 퀘스트를 끝내면 태초 엔그램 스택이 하루마다 쌓이는데, 이 구간의 최고치가 되기 전에는 태초 엔그램이 드랍되지 않는다.
+            </div>
+        </div>
+        <div class="contents" id="c-4">
+            <h2><a href="#top">4.</a> 1270 ~ 1320</h2>
+            <div class="system">
+                <span class="rare">희귀</span> / 일반 <span class="legendary">전설</span> 보상 : 최대 전투력 - α <span>(α &gt;
+                    0)</span>
+                <br>
+                강력한 장비 1단계 보상 : 최대 전투력 + 3
+                <br>
+                강력한 장비 2단계 보상 : 최대 전투력 + 4
+                <br>
+                강력한 장비 3단계 보상 : 최대 전투력 + 5/5
+                <br>
+                최고조 장비<span>(전용 퀘스트로 얻을 수 있는 고유 특성이 달린 전설 무기)</span> 보상 : 최대 전투력 + 5/6
+                <br>
+            </div>
+        </div>
+        <div class="contents" id="c-5">
+            <h2><a href="#top">5.</a> 1320 ~ 1330</h2>
+            <div class="system">
+                <span class="rare">희귀</span> / <span class="legendary">전설</span> 장비 보상 : 최대 전투력 - α <span>(0 &lt;= α
+                    &lt;= 3)</span>
+                <br>
+                강력한 장비 보상 : 최대 전투력 + 0 <span>(현재 최대 전투력)</span>
+                <br>
+                최고급 장비 <span>(주간 플레이리스트 / 클랜 엔그램)</span> : 최대 전투력 + 1
+                <br>
+                최고급 장비 <span>(그 이외)</span> : 최대 전투력 + 2
             </div>
         </div>
     </div>
@@ -141,9 +318,9 @@
                 <li><a href="../../html/guide/guide-main.html">가이드</a>
                     <ul class="bt_nav-in">
                         <li><a href="../../html/guide/guide-main.html">전체 가이드</a></li>
-                        <li><a href="../../html/guide/guide-first.html">1100 ~ 1270</a></li>
-                        <li><a href="../../html/guide/guide-second.html">1270 ~ 1320</a></li>
-                        <li><a href="../../html/guide/guide-third.html">1320 ~ 1330</a></li>
+                        <li><a href="../../html/guide/guide-main.html#c-3">1100 ~ 1270</a></li>
+                        <li><a href="../../html/guide/guide-main.html#c-4">1270 ~ 1320</a></li>
+                        <li><a href="../../html/guide/guide-main.html#c-5">1320 ~ 1330</a></li>
                     </ul>
                 </li>
                 <li><a href="../../html/class/class-main.html">클래스</a>
@@ -200,4 +377,5 @@
         </div>
     </footer>
 </body>
+
 </html>

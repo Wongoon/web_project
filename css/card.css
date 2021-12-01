@@ -3,10 +3,11 @@
     left:100px;
     width:300px;
     height:400px;
-    background-color: #f8f8f8;
+    background-color: #efefef;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
     margin:30px 0;
+    border:1px solid #ddd;
 }
 .card i{
     position: absolute;
@@ -45,6 +46,7 @@
 }
 .card .to_id p{
     font-size:18px;
+    margin-bottom:10px;
 }
 .card .to_id p a{
     color:#0275d8;
