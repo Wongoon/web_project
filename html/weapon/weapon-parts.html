@@ -10,6 +10,68 @@
     <link rel="stylesheet" href="../../css/card.css">
     <script src="../../javascript/main.js" defer type="text/javascript"></script>
     <script src="../../javascript/jquery-1.12.3.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        .frame dt {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .frame dd {
+            position: relative;
+            left: 15px;
+        }
+
+        .frame_table_main {
+            width: 400px;
+            margin: 0;
+            position: relative;
+            left: 15px;
+        }
+
+        .frame_table_main table {
+            width: 100%;
+        }
+
+        .frame_table_main table tr td .paragraph {
+            padding: 8px 15px;
+        }
+
+        .frame_table_main table tr td {
+            text-align: left;
+        }
+
+        .paragraph strong {
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .paragraph strong span {
+            color: #fff;
+        }
+
+        .paragraph strong span.size-up {
+            font-size: 20px;
+        }
+
+        .none {
+            padding: 5px 10px;
+        }
+
+        .size-down {
+            font-weight: 400;
+        }
+
+        .weapon_class {
+            word-break: keep-all;
+            font-weight: 500;
+            font-size:12px;
+        }
+    </style>
 </head>
 
 <body>
@@ -105,28 +167,726 @@
             <div class="card" id="top">
                 <i></i>
                 <div class="title">
-                    <p>전투력 가이드</p>
+                    <p>무기 개조 부품</p>
                 </div>
                 <div class="to_id">
-                    <p><a href="#c-1">1</a>. 서비스 준비 중입니다.</p>
+                    <p><a href="#c-1">1</a>. 고유 프레임</p>
+                    <p><a href="#c-2">2</a>. 1번째 특성</p>
+                    <p><a href="#c-3">3</a>. 2번째 특성</p>
+                    <p><a href="#c-4">4</a>. 3번째 / 4번째 특성</p>
+                    <p><a href="#c-5">5</a>. 개조 부품</p>
+                    <p><a href="#c-6">6</a>. 무기 걸작</p>
                 </div>
             </div>
         </div>
 
-        <div class="contents">
-            <h2 id="#c-1"><a href="#top">1.</a> 서비스 준비 중입니다.</h2>
+        <div id="c-1" class="contents">
+            <h2><a href="#top">1.</a> 고유 프레임</h2>
+            <div class="system">
+                <dl class="frame">
+                    <dt>적응형 프레임</dt>
+                    <dd>밸런스가 가장 잘 잡힌 프레임으로, 전체적으로 안정적이다.</dd>
+                    <dd>특수 탄약군과 중화기군에서는 DPS가 높고, 탄 효율이 낮은 속사 프레임과 DPS가 낮고, 탄 효율이 높은 고위력 프레임의 이음새 역할을 한다.</dd>
+                </dl>
+                <br>
+                <div class="frame_table_main">
+                    <table>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">적응형 프레임</span> (Adaptive Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">균형 잡힌 손잡이로, 안정적이고 튼튼합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            자동 소총 | 파동 소총 | 핸드 캐논 | 기관단총 | 보조 무기 | 유탄 발사기 | 융합 소총 | 저격총 | 로켓 발사기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">균형 잡히고 안정적인 손잡이입니다. <span
+                                                style="color:#787878; font-size: 12px;">(우클릭)</span> 버튼을 누르면 어퍼컷 공격을
+                                            가합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            검
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">오몰론 적응형 프레임</span> (Omolon Adaptive Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: #444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">균형 잡히고 안정적인 손잡이로, 3발의 탄약을 일제 사격합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            보조 무기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div style="margin: 10px;"></div>
+                <dl class="frame">
+                    <dt>공격적 프레임</dt>
+                    <dd>한방 대미지와 사거리가 높고, RPM이 낮아 전체적인 DPS는 떨어지지만 RPM이 낮아 탄 효율은 뛰어난 편이다..</dd>
+                    <dd>사거리가 가장 길어 선호할 것 같은 프레임이지만, 데스티니 특유의 조준 시 사거리 계산 시스템을 할 필요가 없기 때문에 선호되지 않는다.</dd>
+                    <dd>유일하게 로켓 발사기만 다른 프레임과 대미지 차이가 없다.</dd>
+                </dl>
+                <br>
+                <div class="frame_table_main">
+                    <table>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">공격적 프레임</span> (Aggressive Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">공격력이 높지만, 반동도 강합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            핸드 캐논 | 산탄총 | 저격총 | 로켓 발사기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">공격력이 높지만, 반동도 강합니다. 근거리에서 보너스 피해를 줍니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            기관단총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">큰 타격을 주며 반동이 강한 무기입니다. 처치 후 발사 속도를 증가시킵니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            산탄총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">강력하고 묵직하게 휘두릅니다. <span
+                                                style="color:#787878; font-size: 12px;">(우클릭)</span> 버튼을 누르면 내려찍기 공격을
+                                            가합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            검
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">공격적 점발사격</span> (Aggressive Burst)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">2발의 탄약을 점발사격하여 큰 타격을 줍니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            보조 무기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">4발의 탄약을 점발사격하여 큰 타격을 줍니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            파동 소총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">이중 화염</span> (Double Fire)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">한 번에 두 발을 발사하여 강타합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            핸드 캐논
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">고위력 프레임</span> (High-Impact Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">발사 속도가 느리지만 공격력이 높습니다. 제자리에서 조준 시 정확도가 상승합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            자동 소총 | 파동 소총 | 정찰 소총 | 융합 소총 | 로켓 발사기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div style="margin: 10px;"></div>
+                <dl class="frame">
+                    <dt>경량 프레임</dt>
+                    <dd>경량 프레임인 무기를 들고 있을 시 이동 속도가 빨라지게 된다.</dd>
+                    <dd>대체로 높은 조작성과 좋은 반동 제어를 보인다.</dd>
+                </dl>
+                <br>
+                <div class="frame_table_main">
+                    <table>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">경량 프레임</span> (Lightweight Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">조작성이 탁월합니다. 이 무기를 장착하면 이동 속도가 빨라집니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            자동 소총 | 파동 소총 | 정찰 소총 | 기관단총 | 핸드 캐논 | 보조 무기 | 산탄총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">리커브 활. 이 무기를 장착하면 활 위를 당기는 속도와 이동 속도가 빨라집니다. 활시위를 당긴
+                                            상태에서 <span style="color:#787878; font-size: 12px;">(우클릭)</span> 버튼을 누르면 발사가
+                                            취소됩니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            전투 활
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">휴대용 단발 유탄 발사기로, 원격에서 폭발시킵니다. <span
+                                                style="color:#787878; font-size: 12px;">(좌클릭)</span> 버튼을 길게 눌러 발사하고, 버튼을
+                                            놓아 폭발시킵니다.
+                                        </span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            유탄 발사기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">빠르게 이동하며 신속하게 공격합니다. <span
+                                                style="color:#787878; font-size: 12px;">(우클릭)</span> 버튼을 누르면 돌진 공격을
+                                            가합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            검
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div style="margin: 10px;"></div>
+                <dl class="frame">
+                    <dt>정밀 프레임</dt>
+                    <dd>적응형 프레임과 공격적 프레임 사이에 있는 무기군이다.</dd>
+                    <dd>보통 콘솔에서 많이 선호하는 프레임이다.</dd>
+                </dl>
+                <div class="frame_table_main">
+                    <table>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">정밀 프레임</span> (Precision Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">반동이 수직으로 작용해 제어하기 쉽습니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            자동 소총 | 정찰 소총 | 기관단총 | 보조 무기 | 산탄총 | 융합 소총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">반동이 수직으로 작용하여 제어하기 쉽습니다. 높은 정확도로 빠르게 발사합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            핸드 캐논
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">단발 납탄을 발사합니다. 반동이 수직으로 작용하여 제어하기 쉽습니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            산탄총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">긴 유효 사거리를 가진 정밀 에너지 탄환을 발사합니다. 반동이 수직으로 작용하여 제어하기
+                                            쉽습니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            선형 융합 소총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">컴파운드 활. 활시위를 당기는 시간이 길어 적에게 가장 효율적으로 피해를 줄 수 있습니다. 활시위를
+                                            당긴 상태에서 <span style="color:#787878; font-size: 12px;">(우클릭)</span> 버튼을 누르면
+                                            발사가 취소됩니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            전투 활
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">속도가 느리고 표면에 튕기는 수류탄을 발사합니다. 버튼을 길게 눌러 발사하고, <span
+                                                style="color:#787878; font-size: 12px;">(좌클릭)</span> 버튼을 놓아
+                                            폭발시킵니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            유탄 발사기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">해케 정밀 프레임</span> (Häkke Precision Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">이 무기는 소형 자동 추적 미사일을 발사합니다. 무기를 조준하면 미사일이 적에게
+                                            고정됩니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            로켓 발사기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div style="margin: 10px;"></div>
+                <dl class="frame">
+                    <dt>속사 프레임</dt>
+                    <dd>대체적으로 DPS가 높지만, 사거리가 짧고 탄 효율이 좋지 않은 편이다.</dd>
+                    <dd>또한, 탄창을 모두 비운 상태에서 장전시 장전 속도가 빨라지는 부가 효과가 있다.</dd>
+                </dl>
+                <div class="frame_table_main">
+                    <table>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">속사 프레임</span> (Rapid-Fire Frame)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">탄약 비축량이 증가합니다. 탄창이 비었을 때 재장전 속도가 다소 빨라집니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            자동 소총 | 파동 소총 | 융합 소총 | 저격총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">탄약 비축량이 많을 때 완전 자동 발사됩니다. 무기가 비어 있을 때 재장전 속도가
+                                            증가합니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            산탄총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">서로스 속사</span> (SUROS Rapid-Fire)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">완전 자동 무기입니다. 탄약 비축량이 증가합니다. 탄창이 비었을 때 재장전 속도가 다소
+                                            빨라집니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            보조 무기
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="none"></td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom:1px solid #fff; background-color: #2b2b37;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-up">바이스트 속사</span> (VEIST Rapid-Fire)
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#444;">
+                                <div class="paragraph">
+                                    <strong>
+                                        <span class="size-down">완전 자동 무기입니다. 탄약 비축량이 증가합니다. 탄창이 비었을 때 재장전 속도가 다소
+                                            빨라집니다.</span>
+                                        <br>
+                                        <br>
+                                        <span class="size-up">무기군</span>
+                                        <br>
+                                        <div class="weapon_class">
+                                            정찰 소총
+                                        </div>
+                                    </strong>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="contents" id="c-2">
+            <h2><a href="#top">2.</a> 1번째 특성</h2>
+            <div class="system">
+                서비스 준비 중입니다.
+            </div>
+        </div>
+        <div class="contents" id="c-3">
+            <h2><a href="#top">3.</a> 2번째 특성</h2>
+            <div class="system">
+                서비스 준비 중입니다.
+            </div>
+        </div>
+        <div class="contents" id="c-4">
+            <h2><a href="#top">4.</a> 3번째 / 4번째 특성</h2>
+            <div class="system">
+                서비스 준비 중입니다.
+            </div>
+        </div>
+        <div class="contents" id="c-5">
+            <h2><a href="#top">5.</a> 개조 부품</h2>
+            <div class="system">
+                서비스 준비 중입니다.
+            </div>
+        </div>
+        <div class="contents" id="c-6">
+            <h2><a href="#top">6.</a> 무기 걸작</h2>
             <div class="system">
                 서비스 준비 중입니다.
             </div>
         </div>
     </div>
-    
+
     <footer>
         <div class="go_to">
-            <a href="https://bungie.net">번지넷 바로가기</a>
-            <a href="https://app.destinyitemmanager.com/">DIM 바로가기</a>
-            <a href="https://www.d2checklist.com/home">강력한 장비 & 최고급 장비<br>퀘스트 현황 확인하기</a>
-            <a href="https://www.light.gg">장비 검색 & 획득 가능한 퍽 확인하기</a>
+            <a href="https://bungie.net" target="_blank">번지넷 바로가기</a>
+            <a href="https://app.destinyitemmanager.com/" target="_blank">DIM 바로가기</a>
+            <a href="https://www.d2checklist.com/home" target="_blank">강력한 장비 & 최고급 장비<br>퀘스트 현황 확인하기</a>
+            <a href="https://www.light.gg" target="_blank">장비 검색 & 획득 가능한 퍽 확인하기</a>
         </div>
         <div class="bt_submenu">
             <ul class="bt_nav">
