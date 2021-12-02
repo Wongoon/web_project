@@ -24,6 +24,7 @@ table td, table th{
 }
 h3.h3{
     margin-top:50px;
+    margin-bottom:10px;
     font-size:24px;
     text-align: center;
 }
@@ -95,17 +96,41 @@ section table tr th{
 }
 .week_reset{
     width:1400px;
-    height:auto;
+    height:600px;
     position: relative;
     margin:0 auto;
-    border: 1px solid #2b2b37;
     margin-bottom: 10px;
+    border-bottom:1px solid #2b2b37;
 }
-.week_reset p{
-    display: block;
+.today{
+    width:100%;
+    margin:10px;
+}
+.today span{
+    font-size:30px;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    width:100%;
+    justify-content: center;
+}
+.week{
+    width:700px;
+    height:200px;
+    border: 1px solid #2b2b37;
+    border-bottom:none;
+}
+.week h3{
+    margin-top:10px;
+    font-size:22px;
     text-align: center;
-    height:100%;
-    padding: 100px 0;
-    font-size: 20px;
-    font-weight: 700;
+}
+.content .week:first-child{
+    border-right:none;
+}
+.week p{
+    margin-top:60px;
+    text-align: center;
+    font-size:18px;
 }
