@@ -49,7 +49,7 @@ ul.tabmenu li{
 ul.tabmenu li:hover{
     color:#f68500;
 }
-ul.tabnav_ul li.current{
+ul.tabmenu li.current{
     border-top: 2px solid #f68500;
     color:#f68500;
 }
