@@ -618,14 +618,12 @@
             <h3 class="h3">주간 리셋 + 암상인</h3>
             <div class="today">
                 <script class="p">
-                    var now = new Date();	// 현재 날짜 및 시간
-                    var month  = now.getMonth() + 1;
-                    document.write('<span>'+month+'월</span>');
+                    var now = new Date().getMonth() + 1;	// 현재 날짜 및 시간
+                    document.write('<span>'+now+'월</span>');
                 </script>
                 <script class="p">
-                    var now = new Date();	// 현재 날짜 및 시간
-                    var date = now.getDate();
-                    document.write('<span>'+date+'일</span>');
+                    var now = new Date().getDate();	// 현재 날짜 및 시간
+                    document.write('<span>'+now+'일</span>');
                 </script>
             </div>
             <div class="week_reset">
